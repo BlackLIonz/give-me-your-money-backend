@@ -154,7 +154,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-TATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 STATIC_FILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
