@@ -83,16 +83,7 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME', 'card_game_db'),
-        'USER': os.getenv('DB_USER', 'db_user'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'db_password'),
-        'HOST': os.getenv('DB_HOST', '127.0.0.1'),
-        'PORT': os.getenv('DB_PORT', '5432'),
-    }
-}
+DATABASES = {}
 
 AUTH_USER_MODEL = 'users.User'
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
