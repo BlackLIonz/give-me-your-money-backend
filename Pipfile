@@ -13,6 +13,7 @@ flake8 = "*"
 [packages]
 django = "*"
 gunicorn = "*"
+whitenoise = "*"
 django-heroku = "*"
 djangorestframework = "*"
 django-filter = "*"

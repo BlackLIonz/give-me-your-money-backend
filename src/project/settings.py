@@ -154,8 +154,12 @@ USE_L10N = True
 
 USE_TZ = True
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+TATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
+
+STATIC_FILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "staticfiles")]
 
 JWT_SECRET_KEY = os.getenv('JWT_SECRET_KEY', "@_sa^t#!=ve7cgu#u=u0xtr-+wug#c5t41w&nts+=k*mv(zx1#")
 JWT_AUTH = {
