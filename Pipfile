@@ -12,6 +12,7 @@ flake8 = "*"
 
 [packages]
 django = "*"
+django-heroku = "*"
 djangorestframework = "*"
 django-filter = "*"
 requests = "*"
