@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': os.getenv('DB_NAME', 'card_game_db'),
         'USER': os.getenv('DB_USER', 'db_user'),
         'PASSWORD': os.getenv('DB_PASSWORD', 'db_password'),
