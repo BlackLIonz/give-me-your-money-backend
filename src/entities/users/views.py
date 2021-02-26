@@ -43,7 +43,7 @@ class UserViewSet(
     }
 
     def get_queryset(self):
-        return self.queryset.order_by('balance').all()
+        return self.queryset.order_by('-balance').all()
 
     @action(detail=False, methods=['get'], url_path='me')
     def me(self, request, **kwargs):
