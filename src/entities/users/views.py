@@ -42,6 +42,9 @@ class UserViewSet(
         IsAuthenticated: ['me'],
     }
 
+    def get_queryset(self):
+        return self.queryset.order_by('balance').all()
+
     @action(detail=False, methods=['get'], url_path='me')
     def me(self, request, **kwargs):
         serializer_data = UserSerializer(request.user).data
